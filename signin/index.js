@@ -1,7 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app"
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail} from "firebase/auth"
-require("dotenv").config()
 
 
 // input fields and button
@@ -19,7 +18,7 @@ const emailResetInput = document.getElementById('emailResetInput')
 const resetForm = document.getElementById('resetForm')
 
 const firebaseConfig = {
-  apiKey: FIREBASE_API,
+  apiKey: "AIzaSyBz6AZNmiUcDEhH4Lb-BG-sxuyAKskXz_g",
   authDomain: "computer-database-5f596.firebaseapp.com",
   databaseURL: "https://computer-database-5f596-default-rtdb.firebaseio.com",
   projectId: "computer-database-5f596",

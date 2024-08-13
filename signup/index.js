@@ -11,7 +11,7 @@ const passwordConfirmInput = document.getElementById('passwordConfirmInput')
 const signupBtn = document.getElementById('signupBtn')
 
 const firebaseConfig = {
-  apiKey: FIREBASE_API,
+  apiKey: "AIzaSyBz6AZNmiUcDEhH4Lb-BG-sxuyAKskXz_g",
   authDomain: "computer-database-5f596.firebaseapp.com",
   databaseURL: "https://computer-database-5f596-default-rtdb.firebaseio.com",
   projectId: "computer-database-5f596",
