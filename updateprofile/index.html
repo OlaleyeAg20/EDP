@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: #ffffff;
+            padding: 30px;
+            width: min(100%, 450px);
+            border-radius: 20px;
+            margin-inline: auto;
+            margin-top: 2.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.flex-column > label {
+  color: #151717;
+  font-weight: 600;
+}
+
+.inputForm {
+  border: 1.5px solid #ecedec;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-block: 1px;
+  transition: 0.2s ease-in-out;
+}
+
+.input {
+  margin-left: 10px;
+  font-size: 1rem;
+  height: 100%;
+  background: white;
+  border: none;
+  width: 85%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputForm:focus-within {
+  border: 1.5px solid #2d79f3;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-row > div > label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.button-submit {
+  margin: 20px 0 10px 0;
+  background-color: #151717;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #252727;
+}
+
+.p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid #2d79f3;
+  ;
+}
+
+    
+    </style>
+		<link rel="stylesheet" href="../index.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+        <a href="/index.html">Efix</a>
+    </h1>
+</header>
+    <form class="form" id="updateProfileForm" action="../index.html">
+          <h2 style="text-align: center;">Update your profile to continue.</h2>
+
+          <div class="flex-column">
+            <label for="firstNameInput">First Name </label>
+          </div>
+          <div class="inputForm">
+            <input type="text" class="input" id="firstNameInput" placeholder="Enter your First Name">
+          </div>
+
+          <div class="flex-column">
+            <label for="lastNameInput">Last Name </label>
+          </div>
+          <div class="inputForm">
+            <input type="text" class="input" id="lastNameInput" placeholder="Enter your Last Name">
+          </div>
+          
+          <div class="flex-column">
+            <label for="profileImgInput">Upload your profile image </label>
+          </div>
+          <div class="inputForm">
+            <input style="padding: .5rem;" type="file" class="input" id="profileImgInput">
+          </div>
+
+          <img src="" id="outputImage">
+
+          <button class="button-submit">Update Profile</button>
+
+    </form>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
